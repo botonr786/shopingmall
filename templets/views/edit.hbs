@@ -1,0 +1,18 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+        <div class="col-md-6">
+            <form action="/edit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="{{order._id}}">
+            <input type="text" class="form-control" name="first" placeholder="Enter The name" value="{{order.first}}"><br>
+            <input type="number" placeholder="Enter The Unique number" class="form-control" class="form-control" name="number" value="{{order.number}}"><br>
+            <input type="text" placeholder="Enter The Price" class="form-control" name="price" value="{{order.price}}"><br>
+             <input type="file" name="file" class="form-control" value="{{order.file}}"><br> 
+            <input type="submit" class="btn btn-danger" value="submit">
+            </form>
+        </div>
+    </div>
+</div>

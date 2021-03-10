@@ -1,0 +1,36 @@
+
+ {{>header}}
+ <div class="container">
+     {{>navbar}}
+     <table class="table table-dark">
+    <div class="row">
+        <div class="col-md-12">
+            <thead>
+        <tr>
+            <th scope="col">Order Name</th>
+            <th scope="col">Order Number</th>
+            <th scope="col">Order Price</th>
+            <th scope="col">Order image</th>
+            <th scope="col">Action</th>
+            <th></th>   
+        </tr>
+    </thead>
+        </div>
+    </div> 
+    <tbody>
+        {{#each order}}
+         <tr>
+             <td>{{this.first}}</td>
+             <td>{{this.number}}</td>
+             <td>{{this.price}}</td>
+             <td>
+                 {{this.file}}
+                  </td>
+             <td>
+                 <a href="/payment"><input type="button" class="btn btn-outline-danger" value="Payment"></a>
+             </td>
+         </tr>
+        {{/each}}
+    </tbody> 
+     </table>
+</div>   

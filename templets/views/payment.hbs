@@ -1,0 +1,34 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+    </div>
+</div><br><br>
+
+<div class="container">
+    <div class="total">
+    <form action="/payment" method="POST">
+    <div class="row">
+        <div class="col-md-4">
+          <center><h3>Online_Payment</h3></center><br>
+            <input type="text" placeholder="Card Holder Name" name="holder" class="form-control"><br>
+            <input type="number" placeholder="Enter The Card Number" name="cardnumber" class="form-control"><br>
+         </div>
+         </div>
+         <div class="row">
+             <div class="col-md-2">
+                 <label>Curent Date</label>
+                 <input type="date" class="form-control" name="curent" placeholder="Enter the Current Date">
+             </div>
+             <div class="col-md-2 ">
+                 <label>Expire Date</label>
+                 <input type="date" class="form-control" name="expire" placeholder="Enter the Current Date"><br>
+             </div>
+         </div>
+        <input type="submit" class="btn btn-outline-danger" value="Payment" style="margin-left: 10px;">
+    </form>
+</div>
+</div>
+

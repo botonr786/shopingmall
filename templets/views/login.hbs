@@ -1,0 +1,15 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+        <div class="col-md-6">
+            <form action="/login" method="POST">
+            <input type="email" placeholder="Enter the gmail id" class="form-control" name="gmail"><br>
+            <input type="password" placeholder="Enter The password" class="form-control" name="password"><br>
+            <input type="submit" class="btn btn-danger" value="login">
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{>navbar}}
+        </div>
+    </div>
+</div><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <hr><h2 style="color: cadetblue;">Contact us</h2><hr><br><br>
+            <input type="submit" value="CAREERS" class="btn btn-outline-success" id="button1"><br>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <img src="images/img2.jpg" id="car">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+     <div class="col-md-6" style="background-color: whitesmoke;">
+          <div id="box1">
+            <h2>Contact Form</h2><hr>
+                <form action="/contact" method="POST">
+                 <label>Name:(Require)</label>
+                 <input type="text" placeholder="Plese Enter Yours Name" class="form-control" name="name"><br>
+                 <label>Email:(Require)</label>
+                 <input type="email" placeholder="Plese Enter Yours Gmail" class="form-control" name="gmail"><br>
+                 <label>Telephone:(Require)</label>
+                 <input type="number" placeholder="Plese Enter Yours Number" class="form-control" name="number"><br>
+                 <label>Message:(Require)</label>
+                 <textarea class = "form-control" rows = "4" placeholder = "Message some.....?" name="comment"></textarea><br>
+                 <input type="submit" class="btn btn-lg btn-outline-success btn-block" value="Send Email">
+                </form>
+            </div>
+           </div>
+           <div class="col-md-6">
+               <div class="card">
+                   <img src="images/img3.jpg">
+                   <input type="submit" value="register" style="margin-top: -100px;">
+               </div>
+           </div>
+    </div>
+</div>

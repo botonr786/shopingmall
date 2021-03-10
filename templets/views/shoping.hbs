@@ -1,0 +1,43 @@
+ {{>header}}
+<div class="container">
+    <div class="row">
+       <div class="col-md-12">
+           {{>navbar}}
+       </div>
+    </div><br><br>
+    <div class="conatiner">
+     <form action="/search" method="POST">
+     <h1>Online Shopping Mobile</h1><hr>
+      <div class="row">
+          <div class="col-md-10">
+              <input type="text" class="form-control" name="search" placeholder="Enter Your Search Option" id="serchbox">
+          </div>
+          <div class="col-md-2">
+              <input type="submit" class="btn btn-success" value="Search" id="subox">
+          </div>
+      </div>
+     </form>
+ </div>
+   <form action="/searchmethod" method="POST">
+        <div class="card-group">
+             {{#each order}}
+             <div class="col-sm-3 py-3">
+                 <div id="div2">
+              <div class="card" id="card1">
+                   <h5 class="div3">{{this.number}}</h5>
+                  <img src="upload/{{this.file}}" height="200px">
+                  </div>
+                  <div class="card-body">
+                      <p>Name:{{this.first}}</p>
+                      <p>Rs:{{this.price}}.00</p>
+                     <a href="/orderview/{{this._id}}"> <input type="button" class="btn btn-outline-danger" value="Add_Buy_Card"></a>
+                    <a href="/logincng">  <input type="button" class="btn btn-outline-success" value="Edit"></a>
+                  </div> 
+                  </div>
+              </div>
+               {{/each}}
+        </div>
+        </form>
+    </div>
+ 
+
